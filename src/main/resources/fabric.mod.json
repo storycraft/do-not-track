@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "do-not-track",
+  "version": "1.0.0",
+
+  "name": "Do Not Track",
+  "description": "DNT is a minecraft mod that disable a server its tracking of an individual minecraft client.",
+  "authors": [
+    "storycraft"
+  ],
+  "contact": {
+    "homepage": "https://pancake.sh",
+    "sources": "https://github.com/storycraft/do-not-track"
+  },
+
+  "license": "MIT",
+  "icon": "assets/dnt/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "sh.pancake.dnt.Mod"
+    ]
+  },
+  "mixins": [
+    "dnt.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+  }
+}
